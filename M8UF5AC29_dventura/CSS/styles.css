@@ -1,0 +1,38 @@
+#grid{
+    display: inline grid;
+    grid-template-columns: 100px repeat(5, 200px);
+    grid-template-rows: 50px repeat(3, 100px) 25px repeat(3, 100px);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+div{
+    border: 2px solid red;
+}
+.M06{
+    grid-row: span 2;
+}
+.M06_r3{
+    grid-row: span 3;
+}
+.M07{
+    grid-row: span 3;
+}
+.M08{
+    grid-row: span 2;
+}
+.M10{
+    grid-row: span 2;
+}
+.M12{
+    grid-row: span 2;
+}
+#Pati{
+    grid-column: span 6;
+}
+img{
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

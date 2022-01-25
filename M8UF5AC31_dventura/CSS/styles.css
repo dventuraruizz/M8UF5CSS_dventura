@@ -1,0 +1,243 @@
+/*Web principal*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+
+}
+.bar{
+    font-size: 16px;
+    height: 35px;
+    background-color: rgb(73, 73, 73);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.bar li a{
+    text-decoration: none;
+    color: white;
+    padding: 7px 45px;
+    border: 1px solid rgb(34, 33, 33);
+}
+ul{
+    list-style-type: none;
+}
+h3{
+    text-align: center;
+    padding: 30px;
+    font-weight: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img{
+    width: 100%;
+}
+/*.img_s1{
+    width: 180px;
+    height: 130px;
+    padding: 20px 60px;
+    display: inline-flex;
+    border: 2px solid red;
+}*/
+.img_s3{
+    width: 400px;
+    height: 250px;
+    padding: 0px 10px;
+}
+.img_s3:hover{
+    opacity: 0.3;
+}
+#contenedor_1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.cont_1{
+    display: inline-block;
+}
+p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+div.cont_1 p{
+    font-style: italic;
+    font-weight: bold;
+}
+#p_descrip{
+    width: 500px;
+}
+div button{
+    background-color: rgb(43, 43, 43);
+    color: white;
+    padding: 8px;
+    justify-content: center;
+    border-radius: 6px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    margin: 20px;
+    font-size: medium;
+}
+div button a{
+    text-decoration: none;
+    color: white;
+}
+div>button:hover{
+    opacity: 0.3;
+}
+hr{
+    height: 2px;
+    background-color: rgb(230, 228, 228);
+    border: 1px solid rgb(230, 228, 228);
+    width: 90%;
+}
+footer{
+    font-size: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer li{
+    color: rgb(167, 167, 167);
+    padding: 8px 20px;
+    display: inline-block;
+    margin: 10px;
+}
+footer ul{
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(110, 109, 109);
+    font-size: small;
+}
+#cont_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+@media only screen and (max-width: 600px) {
+    .cont_1{
+        display: block;
+    }
+    #contenedor_1{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+/*Web llocs paradisiacs (imatges)*/
+#grid{
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(4, 200px);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+#h1_color{
+    color: rgb(196, 27, 196);
+    margin-top: 10px;
+}
+.col{
+    grid-column: span 2;
+}
+.rows{
+    grid-row: span 2;
+}
+#img_par_1{
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+}
+#img_par_2{
+    background-image: url(../img/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#img_par_3{
+    background-image: url(../img/3.jpg);
+    background-size: cover;
+    background-position: right;
+}
+#img_par_4{
+    background-image: url(../img/4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img_par_5{
+    background-image: url(../img/7.jpg);
+    background-size: cover;
+}
+#img_par_6{
+    background-image: url(../img/6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#img_par_7{
+    background-image: url(../img/5.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+#img_par_8{
+    background-image: url(../img/8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#img_par_9{
+    background-image: url(../img/9.png);
+    background-size: cover;
+    background-position: right;
+}
+#img_par_10{
+    background-image: url(../img/10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#img_par_11{
+    background-image: url(../img/11.png);
+    background-size: cover;
+    background-position: center;
+}
+#img_par_12{
+    background-image: url(../img/12.jpg);
+    background-size: cover;
+    background-position: center;
+}
+@media only screen and (max-width: 600px) {
+    #grid{
+        grid-template-columns: repeat(2,200px);
+        grid-template-rows: repeat(8, 200px);
+    }
+}
+/*Formulari de reserva*/
+#cont_form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    flex-direction: column;
+    display: flex;
+    background-color: rgb(130, 247, 237);
+    width: fit-content;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+label{
+    font-weight: bold;
+    margin: 5px 5px;
+}
